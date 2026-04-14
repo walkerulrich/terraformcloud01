@@ -8,7 +8,7 @@ terraform {
 }
 terraform {
   cloud {
-    organization = "terraformcloud98-org"
+    organization = "terraformcloud01-org"
 
     workspaces {
       name = "projet-fils-rouge"
