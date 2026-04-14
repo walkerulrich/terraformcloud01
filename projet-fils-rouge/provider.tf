@@ -9,12 +9,15 @@ terraform {
 terraform {
   required_version = "1.14.8"
 
+terraform {
+  required_version = "1.14.8"
+
   cloud {
     
     organization = "terraformclouds-org"
 
     workspaces {
-      name = "projet-fils-rouge_f"
+      name = "projet-fils-rouge_ff"
     }
   }
 }

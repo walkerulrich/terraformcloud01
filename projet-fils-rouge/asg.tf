@@ -1,7 +1,7 @@
 # SUPPRIMER aws_launch_configuration et le remplacer par :
 resource "aws_launch_template" "my_lt" {
   name          = "my-lt"
-  image_id      = "ami-0c7217cdde317cfec"
+  image_id      = "ami-0d71ca6a78e324f68"
   instance_type = "t3.micro"
 
   network_interfaces {
