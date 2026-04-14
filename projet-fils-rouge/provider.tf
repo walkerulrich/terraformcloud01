@@ -19,7 +19,7 @@ terraform {
     workspaces {
       name = "projet-fils-rouge_ff"
     }
-  }
+   }
 }
 provider "aws" {
   region     = "us-east-1"
