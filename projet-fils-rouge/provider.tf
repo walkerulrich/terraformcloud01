@@ -14,7 +14,7 @@ terraform {
     organization = "terraformclouds-org"
 
     workspaces {
-      name = "projet-fils-rouge"
+      name = "projet-fils-rouge_"
     }
   }
 }
