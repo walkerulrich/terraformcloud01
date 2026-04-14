@@ -6,7 +6,7 @@ terraform {
     organization = "terraformclouds-org"
 
     workspaces {
-      name = "projet-fils-rouge_continuons_f"
+      name = "projet-fils-rouge_continuons_finalement"
     }
   }
 }
