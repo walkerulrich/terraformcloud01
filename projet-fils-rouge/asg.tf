@@ -1,7 +1,18 @@
 # SUPPRIMER aws_launch_configuration et le remplacer par :
+# Récupère automatiquement la dernière Amazon Linux 2
+data "aws_ami" "amazon_linux" {
+  most_recent = true
+  owners      = ["amazon"]
+
+  filter {
+    name   = "name"
+    values = ["amzn2-ami-hvm-*-x86_64-gp2"]
+  }
+}
+
 resource "aws_launch_template" "my_lt" {
   name          = "my-lt"
-  image_id      = "ami-0d71ca6a78e324f68"
+  image_id      = data.aws_ami.amazon_linux.id   # ← dynamique !
   instance_type = "t3.micro"
 
   network_interfaces {
